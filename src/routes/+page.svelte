@@ -51,13 +51,15 @@
     <p>I quinarius/month</p>
     
   </div>
-  <div>All plans payable in advance by the ides of each month</div>
+  <br>
+  <br>
+  <div><em>All plans payable in advance by the ides of each month</em></div>
 </div>
 
 <div class="testimonials">
   <h2>Testaments to results (new!)</h2>
-  <p>""The Governor workouts changed my life. I've never felt more powerful!" - Marcus A.</p>
-  <p>"I love it!" - John Smith</p>
+  <p>"Highly recommend the Governor workouts—I've never felt more powerful!" -Marcus A.</p>
+  <p>"I have a new lease on life!" -Lazarus O'B.</p>
 </div>
 
 <div class="footer">
