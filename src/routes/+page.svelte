@@ -9,23 +9,23 @@
 
   const features = [
     {
-      title: "Ancient wisdom, modern results",
-      description: "Discover fitness routines that have stood the test of time",
+      title: "Ancient Wisdom, Modern Martyrs",
+      description: "From scrolls to swole: routines tested by time and testimony",
       icon: icons.scroll
     },
     {
-      title: "Governor's Circle Premium Access",
-      description: "Join our elite training program for divine results",
+      title: "Render Unto Caesar",
+      description: "What is fitness is fitness, what is gains is gains",
       icon: icons.crown
     },
     {
-      title: "Group Classes",
-      description: "Train with fellow disciples in our state-of-the-art facilities",
+      title: "Last Supper Sessions",
+      description: "Break bread with fellow disciples in our state-of-the-art sanctum",
       icon: icons.users
     },
     {
-      title: "6-Day Trial (Free Rest Day)",
-      description: "Experience a transformation of biblical proportions",
+      title: "6-Day Trial (Sabbath Rest)",
+      description: "Rise again with a transformation of biblical proportions",
       icon: icons.calendar
     }
   ];
@@ -339,7 +339,7 @@
   </section>
   <section class="footer">
     <div>
-        Copyright © 2021 Pontius Pilates. No rights reserved.
+        © 33 A.D. Pontius Pilates S.P.Q.R. No rights reserved.
     </div>
   </section>
 </div>

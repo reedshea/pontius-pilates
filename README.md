@@ -1,38 +1,66 @@
-# sv
+# PONTIUS PILATES! ALL-ONE FITNESS-FAITH-BODY-MIND-SOUL-SPIRIT! READY?
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+LISTEN NOW! 6000 YEARS & ONLY FITNESS TRUTH! ETERNAL FATHER PONTIUS-PILATES-
+ABSOLUTE-FITNESS-TRUTH EXERCISES TO UNITE ALL-ONE! ALL-ONE! ALL-ONE!
 
-## Creating a project
+MORAL ABC OF FITNESS: BUILD-MAINTAIN-GROW! FOR BODY-MIND-SPIRIT MUST WORK AS ONE!
 
-If you're seeing this, you've probably already done this step. Congrats!
+## WHAT IS PONTIUS PILATES!! ? ?? !
 
+REVOLUTIONARY FITNESS PORTAL! UNITING ANCIENT ROMAN WISDOM WITH MODERN EXERCISE SCIENCE! ALL-ONE OR NONE! EXCEPTIONS ETERNALLY NONE!
+
+FEATURES-TRUTH-POWER:
+* Cross-training basics! Work hard or face persecution!
+* Bread & fish nutrition! Feed the multitudes!
+* Golgotha Peak access! Climb to new heights!
+* Wine to Water hydration therapy! Quench your spirit!
+
+## STACK! TECHNOLOGY-TRUTH-POWER!
+
+* SVELTE! FOR SPEED-TRUTH-LIGHTNESS!
+* TYPESCRIPT! FOR ERROR-PREVENTION-SALVATION!
+* TAILWIND! FOR STYLE-UNITY-BEAUTY!
+* VITE! FOR DEVELOPMENT-VELOCITY-POWER!
+
+## DEVELOPMENT! ABSOLUTE MUST DO!
+
+1. CLONE REPO OR FACE EXILE!
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/username/pontius-pilates.git
+cd pontius-pilates
 ```
 
-## Developing
+2. INSTALL DEPENDENCIES OR REMAIN UNCLEAN!
+```bash
+npm install
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+3. START DEV SERVER OR FACE JUDGMENT!
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
+4. BUILD FOR PRODUCTION OR REMAIN IN DARKNESS!
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## CONTRIBUTING! UNITE-BUILD-GROW!
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+PULL REQUESTS WELCOME! BUT REMEMBER:
+
+1. TEST OR FACE TRIAL!
+2. LINT OR FACE SCOURGING!
+3. DOCUMENT OR FACE EXILE!
+
+ALL-ONE! ALL-ONE! ALL-ONE OR NONE! EXCEPTIONS ETERNALLY NONE!
+
+## LICENSE! READ-UNDERSTAND-OBEY!
+
+MIT! FREE AS TRUTH! FREE AS EXERCISE! FREE AS SALVATION!
+
+EXERCISE-LOVE-UNITE! OK! ALL-ONE!
+
+---
+
+Made with divine inspiration & coffee in 33 AD
