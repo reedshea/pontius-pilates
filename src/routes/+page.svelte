@@ -76,6 +76,10 @@
     background: linear-gradient(to bottom, #f3f4f6, #ffffff);
   }
 
+  p {
+    font-size: 1rem; /* Set your desired font size here */
+  }
+
   /* Hero Section */
   .hero {
     position: relative;
@@ -188,6 +192,29 @@
   }
 
   .plan-card:hover {
+    border-color: #7c3aed;
+  }
+
+  .plan-bonus {
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    transition: border-color 0.3s;
+    font-size: 0.875rem;
+    text-align: center;
+    
+  }
+
+  .plan-bonus h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #7c3aed;
+    margin-bottom: 0;
+    font-style: italic;
+  }
+
+  .plan-bonus:hover {
     border-color: #7c3aed;
   }
 
@@ -316,7 +343,11 @@
         </div>
       {/each}
     </div>
-    <section class="price-period">All subscriptions payable in advvance by the Ides of each month. We accept tetradrachm!</section>
+    <section class="plan-bonus">
+      <h2>Bonus "Dolo Rossa" Gymnastics Module</h2>
+      <p>Sign up for the Governor's Circle and receive a complimentary gymnastics course—nail the Iron Cross in just fourteen steps!</p>
+    </section>
+    <section class="price-period">All subscriptions payable in advance by the Ides of each month. We accept tetradrachm!</section>
 </section>
 
   <!-- Testimonials Section -->
