@@ -24,7 +24,7 @@
       icon: icons.users
     },
     {
-      title: "6-Day Trial (plus a rest day)",
+      title: "6-Day Trial (Free Rest Day)",
       description: "Experience a transformation of biblical proportions",
       icon: icons.calendar
     }
@@ -35,30 +35,27 @@
       title: "Disciple Level",
       price: "IV",
       features: [
-        "Basic workout routines",
-        "Weekly newsletter",
-        "Community forum access"
+        "Cross-training basics",
+        "Stone Tablet newsletter",
+        "Forum Magnum access"
       ]
     },
     {
       title: "Centurion Level",
       price: "VIII",
       features: [
-        "Advanced workout plans",
-        "Nutrition guidance",
-        "Monthly challenges",
-        "Live streaming classes"
+        "Bread and fish nutrition guide",
+        "Monthly persecution challenges",
+        "Golgotha Peak access"
       ]
     },
     {
       title: "Governor's Circle",
       price: "XII",
       features: [
-        "Elite training programs",
-        "1-on-1 coaching",
-        "Exclusive events",
-        "Priority booking",
-        "Custom meal plans"
+        "Stations of the Crossfit",
+        "39 lashes of motivation",
+        "Wine to Water hydration therapy"
       ]
     }
   ];
