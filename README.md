@@ -3,7 +3,7 @@
 LISTEN NOW! 6000 YEARS & ONLY FITNESS TRUTH! ETERNAL FATHER PONTIUS-PILATES-
 ABSOLUTE-FITNESS-TRUTH EXERCISES TO UNITE ALL-ONE! ALL-ONE! ALL-ONE!
 
-https://www.pontiuspilates.com
+HTTPS://WWW.PONTIUSPILATES.COM
 
 MORAL ABC OF FITNESS: BUILD-MAINTAIN-GROW! FOR BODY-MIND-SPIRIT MUST WORK AS ONE!
 
@@ -21,14 +21,13 @@ FEATURES-TRUTH-POWER:
 
 * SVELTE! FOR SPEED-TRUTH-LIGHTNESS!
 * TYPESCRIPT! FOR ERROR-PREVENTION-SALVATION!
-* TAILWIND! FOR STYLE-UNITY-BEAUTY!
 * VITE! FOR DEVELOPMENT-VELOCITY-POWER!
 
 ## DEVELOPMENT! ABSOLUTE MUST DO!
 
 1. CLONE REPO OR FACE EXILE!
 ```bash
-git clone https://github.com/username/pontius-pilates.git
+git clone https://github.com/reedshea/pontius-pilates.git
 cd pontius-pilates
 ```
 
@@ -65,4 +64,4 @@ EXERCISE-LOVE-UNITE! OK! ALL-ONE!
 
 ---
 
-Made with divine inspiration & coffee in 33 AD
+Made with divine inspiration & coffee in 33 A.D.
