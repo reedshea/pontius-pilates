@@ -9,6 +9,19 @@ Parameters:
     AllowedValues:
       - production
       - staging
+  DomainName:
+    Type: String
+    Default: ''
+    Description: Custom domain name (e.g. pontius-pilates.com). Leave empty to use the default CloudFront domain.
+  CertificateArn:
+    Type: String
+    Default: ''
+    Description: ARN of the ACM certificate for the custom domain. Must be in us-east-1.
+
+Conditions:
+  HasCustomDomain: !And
+    - !Not [!Equals [!Ref DomainName, '']]
+    - !Not [!Equals [!Ref CertificateArn, '']]
 
 Globals:
   Function:
@@ -61,6 +74,18 @@ Resources:
         Enabled: true
         DefaultRootObject: index.html
         HttpVersion: http2and3
+        Aliases:
+          !If
+            - HasCustomDomain
+            - - !Ref DomainName
+            - !Ref 'AWS::NoValue'
+        ViewerCertificate:
+          !If
+            - HasCustomDomain
+            - AcmCertificateArn: !Ref CertificateArn
+              MinimumProtocolVersion: TLSv1.2_2021
+              SslSupportMethod: sni-only
+            - CloudFrontDefaultCertificate: true
         PriceClass: PriceClass_100
         Origins:
           - Id: S3Origin
@@ -135,4 +160,7 @@ Outputs:
 
   WebsiteUrl:
     Description: Website URL
-    Value: !Sub https://${CloudFrontDistribution.DomainName}
+    Value: !If
+      - HasCustomDomain
+      - !Sub https://${DomainName}
+      - !Sub https://${CloudFrontDistribution.DomainName}

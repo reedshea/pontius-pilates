@@ -16,7 +16,7 @@ confirm_changeset = true
 resolve_s3 = true
 region = "us-east-1"
 s3_prefix = "pontius-pilates-website"
-parameter_overrides = "Environment=\"production\""
+parameter_overrides = "Environment=\"production\" DomainName=\"\" CertificateArn=\"\""
 image_repositories = []
 
 [production]
@@ -32,4 +32,4 @@ capabilities = "CAPABILITY_IAM"
 confirm_changeset = false
 resolve_s3 = true
 region = "us-east-1"
-parameter_overrides = "Environment=production"
+parameter_overrides = "Environment=production DomainName=\"\" CertificateArn=\"\""
