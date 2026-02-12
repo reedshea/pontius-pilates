@@ -4,6 +4,7 @@ version = 0.1
 
 [default.global.parameters]
 stack_name = "pontius-pilates-website"
+region = "us-east-1"
 
 [default.build.parameters]
 cached = true
@@ -14,6 +15,9 @@ capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
 region = "us-east-1"
+s3_prefix = "pontius-pilates-website"
+parameter_overrides = "Environment=\"production\""
+image_repositories = []
 
 [production]
 [production.global.parameters]
