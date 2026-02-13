@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { ButtonLink, SoftButtonLink } from '@/components/elements/button'
+import { ButtonLink, PlainButtonLink, SoftButtonLink } from '@/components/elements/button'
 import { Link } from '@/components/elements/link'
 import { Screenshot } from '@/components/elements/screenshot'
 import { ArrowNarrowRightIcon } from '@/components/icons/arrow-narrow-right-icon'
@@ -12,6 +12,7 @@ import { Plan, PricingMultiTier } from '@/components/sections/pricing-multi-tier
 import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
 import { Testimonial, TestimonialThreeColumnGrid } from '@/components/sections/testimonials-three-column-grid'
 import { TestimonialLargeQuote } from '@/components/sections/testimonial-with-large-quote'
+import { AnnouncementBadge } from '@/components/elements/announcement-badge'
 
 export default function Page() {
   return (
@@ -19,17 +20,24 @@ export default function Page() {
       {/* Hero */}
       <HeroLeftAlignedWithDemo
         id="hero"
+        eyebrow={<AnnouncementBadge href="#" text="Now open in Jerusalem, Nazareth, & Capernaum" cta="Learn more" />}
         headline="Pontius Pilates"
         subheadline={
           <p>
-            It's a Killer Workout!
+            It's a killer workout! The only fitness program that promises death to your old self and resurrection of your best body. Wash your hands of weakness.
           </p>
         }
         cta={
           <div className="flex items-center gap-4">
-            <ButtonLink href="#pricing" size="lg">
+            <div className="flex items-center gap-4">
+            <ButtonLink href="#" size="lg">
               Begin Your Journey
             </ButtonLink>
+
+            <PlainButtonLink href="#" size="lg">
+              Watch the Testimony <ArrowNarrowRightIcon />
+            </PlainButtonLink>
+          </div>
           </div>
         }
         demo={
