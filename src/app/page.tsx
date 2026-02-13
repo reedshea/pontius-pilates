@@ -421,7 +421,7 @@ export default function Page() {
       />
       <TestimonialLargeQuote 
         quote="I squandered my gains on riotous living — tavern nights, not a single squat. Hit rock bottom eating with the swine. But when I returned, they welcomed me with open arms and killed the fatted calf for protein. My six-pack was lost, but now is found." 
-        img={undefined}
+        img={<Image src="/img/prodigal-son.jpg" alt="" width={160} height={160} />}
         name="The Prodigal Son"
         byline="Returned Desciple"      
       >
