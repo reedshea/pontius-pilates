@@ -115,6 +115,44 @@ Resources:
             ResponsePagePath: /404.html
             ErrorCachingMinTTL: 300
 
+  # Visitor Counter Infrastructure
+  VisitorCounterTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub pontius-pilates-counter-${Environment}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: pk
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pk
+          KeyType: HASH
+
+  VisitorCounterFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub pontius-pilates-counter-${Environment}
+      CodeUri: functions/counter/
+      Handler: app.handler
+      Runtime: python3.13
+      Timeout: 10
+      MemorySize: 128
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref VisitorCounterTable
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref VisitorCounterTable
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins:
+            - "*"
+          AllowMethods:
+            - GET
+          AllowHeaders:
+            - content-type
+
   # SSM Parameters for storing infrastructure values
   S3BucketNameParameter:
     Type: AWS::SSM::Parameter
@@ -165,3 +203,7 @@ Outputs:
       - HasCustomDomain
       - !Sub https://${DomainName}
       - !Sub https://${CloudFrontDistribution.DomainName}
+
+  CounterFunctionUrl:
+    Description: Visitor counter Lambda function URL
+    Value: !GetAtt VisitorCounterFunctionUrl.FunctionUrl
