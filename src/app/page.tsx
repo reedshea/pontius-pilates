@@ -11,6 +11,7 @@ import { HeroLeftAlignedWithDemo } from '@/components/sections/hero-left-aligned
 import { Plan, PricingMultiTier } from '@/components/sections/pricing-multi-tier'
 import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
 import { Testimonial, TestimonialThreeColumnGrid } from '@/components/sections/testimonials-three-column-grid'
+import { TestimonialLargeQuote } from '@/components/sections/testimonial-with-large-quote'
 
 export default function Page() {
   return (
@@ -418,6 +419,15 @@ export default function Page() {
           </>
         }
       />
+      <TestimonialLargeQuote 
+        quote="I squandered my gains on riotous living — tavern nights, not a single squat. Hit rock bottom eating with the swine. But when I returned, they welcomed me with open arms and killed the fatted calf for protein. My six-pack was lost, but now is found." 
+        img={undefined}
+        name="The Prodigal Son"
+        byline="Returned Desciple"      
+      >
+
+      </TestimonialLargeQuote>
+
       {/* Call To Action */}
       <CallToActionSimple
         id="call-to-action"
