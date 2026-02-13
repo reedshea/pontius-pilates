@@ -1,27 +1,15 @@
-import Image from 'next/image'
-
-import { ButtonLink, PlainButtonLink } from '@/components/elements/button'
 import { Main } from '@/components/elements/main'
-import { GitHubIcon } from '@/components/icons/social/github-icon'
-import { XIcon } from '@/components/icons/social/x-icon'
-import { YouTubeIcon } from '@/components/icons/social/youtube-icon'
 import {
   FooterCategory,
   FooterLink,
   FooterWithNewsletterFormCategoriesAndSocialIcons,
   NewsletterForm,
-  SocialLink,
 } from '@/components/sections/footer-with-newsletter-form-categories-and-social-icons'
-import {
-  NavbarLink,
-  NavbarLogo,
-  NavbarWithLinksActionsAndCenteredLogo,
-} from '@/components/sections/navbar-with-links-actions-and-centered-logo'
 import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Oatmeal Kit Demo',
+  title: 'Pontius Pilates - It\'s a Killer Workout!',
 }
 
 export default function RootLayout({
@@ -42,57 +30,16 @@ export default function RootLayout({
       </head>
       <body>
         <>
-          <NavbarWithLinksActionsAndCenteredLogo
-            id="navbar"
-            links={
-              <>
-                <NavbarLink href="/pricing">Pricing</NavbarLink>
-                <NavbarLink href="/about">About</NavbarLink>
-                <NavbarLink href="#">Docs</NavbarLink>
-                <NavbarLink href="#" className="sm:hidden">
-                  Log in
-                </NavbarLink>
-              </>
-            }
-            logo={
-              <NavbarLogo href="/">
-                <Image
-                  src="/img/logos/oatmeal-instrument-color-olive-950.svg"
-                  alt="Oatmeal"
-                  className="dark:hidden"
-                  width={85}
-                  height={28}
-                />
-                <Image
-                  src="/img/logos/oatmeal-instrument-color-white.svg"
-                  alt="Oatmeal"
-                  className="not-dark:hidden"
-                  width={85}
-                  height={28}
-                />
-              </NavbarLogo>
-            }
-            actions={
-              <>
-                <PlainButtonLink href="#" className="max-sm:hidden">
-                  Log in
-                </PlainButtonLink>
-                <ButtonLink href="#">Get started</ButtonLink>
-              </>
-            }
-          />
-
           <Main>{children}</Main>
 
           <FooterWithNewsletterFormCategoriesAndSocialIcons
             id="footer"
             cta={
               <NewsletterForm
-                headline="Stay in the loop"
+                headline="Join the Legion"
                 subheadline={
                   <p>
-                    Get customer support tips, product updates and customer stories that you can archive as soon as they
-                    arrive.
+                    Receive sacred scrolls of wisdom and training secrets delivered by messenger pigeon.
                   </p>
                 }
                 action="#"
@@ -100,44 +47,29 @@ export default function RootLayout({
             }
             links={
               <>
-                <FooterCategory title="Product">
-                  <FooterLink href="#">Features</FooterLink>
-                  <FooterLink href="#">Pricing</FooterLink>
-                  <FooterLink href="#">Integrations</FooterLink>
+                <FooterCategory title="Training">
+                  <FooterLink href="#">Programs</FooterLink>
+                  <FooterLink href="/pricing">Tithes</FooterLink>
+                  <FooterLink href="#">Sanctuaries</FooterLink>
                 </FooterCategory>
-                <FooterCategory title="Company">
-                  <FooterLink href="#">About</FooterLink>
-                  <FooterLink href="#">Careers</FooterLink>
-                  <FooterLink href="#">Blog</FooterLink>
-                  <FooterLink href="#">Press Kit</FooterLink>
+                <FooterCategory title="Empire">
+                  <FooterLink href="/about">About</FooterLink>
+                  <FooterLink href="#">Testimonies</FooterLink>
+                  <FooterLink href="#">Scrolls</FooterLink>
                 </FooterCategory>
                 <FooterCategory title="Resources">
-                  <FooterLink href="#">Help Center</FooterLink>
-                  <FooterLink href="#">API Docs</FooterLink>
-                  <FooterLink href="#">Status</FooterLink>
+                  <FooterLink href="#">Oracle</FooterLink>
+                  <FooterLink href="#">Scriptures</FooterLink>
                   <FooterLink href="#">Contact</FooterLink>
                 </FooterCategory>
                 <FooterCategory title="Legal">
-                  <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
-                  <FooterLink href="#">Terms of Service</FooterLink>
-                  <FooterLink href="#">Security</FooterLink>
+                  <FooterLink href="/privacy-policy">Privacy Edict</FooterLink>
+                  <FooterLink href="#">Terms of Servitude</FooterLink>
+                  <FooterLink href="#">Divine Protection</FooterLink>
                 </FooterCategory>
               </>
             }
-            fineprint="© 2025 Oatmeal, Inc."
-            socialLinks={
-              <>
-                <SocialLink href="https://x.com" name="X">
-                  <XIcon />
-                </SocialLink>
-                <SocialLink href="https://github.com" name="GitHub">
-                  <GitHubIcon />
-                </SocialLink>
-                <SocialLink href="https://www.youtube.com" name="YouTube">
-                  <YouTubeIcon />
-                </SocialLink>
-              </>
-            }
+            fineprint="© 33 A.D. Pontius Pilates S.P.Q.R. No rights reserved."
           />
         </>
       </body>
