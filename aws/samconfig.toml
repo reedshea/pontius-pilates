@@ -16,7 +16,7 @@ confirm_changeset = true
 resolve_s3 = true
 region = "us-east-1"
 s3_prefix = "pontius-pilates-website"
-parameter_overrides = "Environment=\"production\" DomainName=\"pontiuspilates.com\" CertificateArn=\"arn:aws:acm:us-east-1:847311326066:certificate/6b210185-907a-40e4-b3d3-b8e3dcc8dcc6\""
+parameter_overrides = "Environment=\"production\" DomainName=\"pontiuspilates.com\" CertificateArn=\"arn:aws:acm:us-east-1:847311326066:certificate/804af5b6-f590-4d21-b2e0-45995dcb4beb\""
 image_repositories = []
 
 [production]
@@ -32,4 +32,4 @@ capabilities = "CAPABILITY_IAM"
 confirm_changeset = false
 resolve_s3 = true
 region = "us-east-1"
-parameter_overrides = "Environment=production DomainName=\"pontiuspilates.com\" CertificateArn=\"arn:aws:acm:us-east-1:847311326066:certificate/6b210185-907a-40e4-b3d3-b8e3dcc8dcc6\""
+parameter_overrides = "Environment=production DomainName=\"pontiuspilates.com\" CertificateArn=\"arn:aws:acm:us-east-1:847311326066:certificate/804af5b6-f590-4d21-b2e0-45995dcb4beb\""
