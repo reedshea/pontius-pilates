@@ -42,7 +42,7 @@ export default function Page() {
       <StatsWithGraph
         id="stats"
         eyebrow="The Gospel of Gains"
-        headline="Suffering builds character since XXXIII A.D."
+        headline="Suffering Builds Character Since XXXIII A.D."
         subheadline={
           <p>
             From the shores of Galilee to the hills of Rome, Pontius Pilates has guided countless disciples on their
@@ -58,7 +58,7 @@ export default function Page() {
       {/* Features */}
       <FeaturesTwoColumnWithDemos
         id="features"
-        eyebrow="Sacred Training Methods"
+        eyebrow="Blessed Are the Swole"
         headline="Ancient Wisdom, Modern Martyrs"
         subheadline={
           <p>
@@ -69,148 +69,28 @@ export default function Page() {
         features={
           <>
             <Feature
-              demo={
-                <Screenshot wallpaper="purple" placement="bottom-right">
-                  <Image
-                    src="/img/screenshots/1-left-1000-top-800.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 sm:hidden dark:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-left-1000-top-800.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden sm:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-left-1800-top-660.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 max-sm:hidden lg:hidden dark:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-left-1800-top-660.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden max-sm:hidden lg:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-left-1300-top-1300.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 max-lg:hidden xl:hidden dark:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-left-1300-top-1300.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden max-lg:hidden xl:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-left-1800-top-1250.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 max-xl:hidden dark:hidden"
-                    width={1800}
-                    height={1250}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-left-1800-top-1250.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden max-xl:hidden"
-                    width={1800}
-                    height={1250}
-                  />
-                </Screenshot>
-              }
-              headline="Cross-Training Excellence"
+              demo={undefined}
+              headline="The Way of the Crossfit"
               subheadline={
                 <p>
-                  Our signature cross-training program builds strength, endurance, and spiritual fortitude. Carry your
-                  burdens with proper form and divine purpose.
+                  Carry your burdens with proper form. What doesn't crucify you makes you stronger.
                 </p>
               }
               cta={
                 <Link href="#">
-                  View the sacred routines <ArrowNarrowRightIcon />
+                  Enter the temple <ArrowNarrowRightIcon />
                 </Link>
               }
             />
             <Feature
-              demo={
-                <Screenshot wallpaper="blue" placement="bottom-left">
-                  <Image
-                    src="/img/screenshots/1-right-1000-top-800.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 sm:hidden dark:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-right-1000-top-800.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden sm:hidden"
-                    width={1000}
-                    height={800}
-                  />
-                  <Image
-                    src="/img/screenshots/1-right-1800-top-660.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 max-sm:hidden lg:hidden dark:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-right-1800-top-660.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden max-sm:hidden lg:hidden"
-                    width={1800}
-                    height={660}
-                  />
-                  <Image
-                    src="/img/screenshots/1-right-1300-top-1300.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 max-lg:hidden xl:hidden dark:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-right-1300-top-1300.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden max-lg:hidden xl:hidden"
-                    width={1300}
-                    height={1300}
-                  />
-                  <Image
-                    src="/img/screenshots/1-right-1800-top-1250.webp"
-                    alt="Training sanctum"
-                    className="bg-white/75 max-xl:hidden dark:hidden"
-                    width={1800}
-                    height={1250}
-                  />
-                  <Image
-                    src="/img/screenshots/1-color-olive-right-1800-top-1250.webp"
-                    alt="Training sanctum"
-                    className="bg-black/75 not-dark:hidden max-xl:hidden"
-                    width={1800}
-                    height={1250}
-                  />
-                </Screenshot>
-              }
+              demo={undefined}
               headline="Render Unto Caesar"
               subheadline={
-                <p>Give your body what it deserves: legendary Roman discipline combined with divine guidance. Your gains
-                belong to the Empire.</p>
+                <p>Caesar gets your taxes. We get your chest and triceps. God gets your glutes.</p>
               }
               cta={
                 <Link href="#">
-                  Discover the path <ArrowNarrowRightIcon />
+                  Join the legion <ArrowNarrowRightIcon />
                 </Link>
               }
             />
