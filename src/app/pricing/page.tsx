@@ -13,61 +13,51 @@ function plans(option: string) {
   return (
     <>
       <Plan
-        name="Starter"
-        price={option === 'Monthly' ? '$12' : '$120'}
-        period={option === 'Monthly' ? '/month' : '/year'}
-        subheadline={<p>Small teams getting started with shared inboxes</p>}
+        name="Disciple Level"
+        price={option === 'Monthly' ? 'IV' : 'XL'}
+        period={option === 'Monthly' ? ' denarii/month' : ' denarii/year'}
+        subheadline={<p>Begin your journey on the path to righteousness</p>}
         features={[
-          'Shared inbox for up to 2 mailboxes',
-          'Tagging & assignment',
-          'Private notes',
-          'Automatic replies',
-          'Email support',
+          'Cross-training basics',
+          'Stone Tablet newsletter',
+          'Forum Magnum access',
         ]}
         cta={
           <SoftButtonLink href="#" size="lg">
-            Start free trial
+            Select Plan
           </SoftButtonLink>
         }
       />
       <Plan
-        name="Growth"
-        price={option === 'Monthly' ? '$49' : '$490'}
-        period={option === 'Monthly' ? '/month' : '/year'}
-        subheadline={<p>Growing teams needing collaboration and insights</p>}
+        name="Centurion Level"
+        price={option === 'Monthly' ? 'VIII' : 'LXXX'}
+        period={option === 'Monthly' ? ' denarii/month' : ' denarii/year'}
+        subheadline={<p>For the devoted who seek greater challenges</p>}
         badge="Most popular"
         features={[
-          'Everything in Starter',
-          'Inbox Agent',
-          'Unlimited mailboxes',
-          'Collision detection',
-          'Snippets and templates',
-          'Reporting dashboard',
-          'Slack integration',
+          'Bread and fish nutrition guide',
+          'Monthly persecution challenges',
+          'Golgotha Peak access',
         ]}
         cta={
           <ButtonLink href="#" size="lg">
-            Start free trial
+            Select Plan
           </ButtonLink>
         }
       />
       <Plan
-        name="Pro"
-        price={option === 'Monthly' ? '$299' : '$2990'}
-        period={option === 'Monthly' ? '/month' : '/year'}
-        subheadline={<p>Support-focused organizations and larger teams</p>}
+        name="Governor's Circle"
+        price={option === 'Monthly' ? 'XII' : 'CXX'}
+        period={option === 'Monthly' ? ' denarii/month' : ' denarii/year'}
+        subheadline={<p>The ultimate transformation of biblical proportions</p>}
         features={[
-          'Everything in Growth',
-          'Custom roles & permissions',
-          'Automation engine',
-          'API access',
-          'SLA tracking',
-          'SSO support',
-          'SOC 2 compliance',
+          'Stations of the Crossfit',
+          '39 lashes of motivation',
+          'Wine to Water hydration therapy',
         ]}
         cta={
           <SoftButtonLink href="#" size="lg">
-            Start free trial
+            Select Plan
           </SoftButtonLink>
         }
       />
@@ -84,8 +74,7 @@ export default function Page() {
         headline="Pricing"
         subheadline={
           <p>
-            Simplify your shared inbox, collaborate effortlessly, and give every customer a reply that feels personal,
-            even if it was written by a bot.
+            All subscriptions payable in advance by the Ides of each month. We accept tetradrachm!
           </p>
         }
         options={['Monthly', 'Yearly']}
@@ -194,89 +183,51 @@ export default function Page() {
       {/* Plan Comparison Table */}
       <PlanComparisonTable
         id="pricing"
-        plans={['Starter', 'Growth', 'Pro']}
+        plans={['Disciple Level', 'Centurion Level', "Governor's Circle"]}
         features={[
           {
-            title: 'Collaboration',
+            title: 'Training',
             features: [
+              { name: 'Cross-training basics', value: true },
               {
-                name: 'Shared inboxes',
-                value: { Starter: '2', Growth: 'Unlimited', Pro: 'Unlimited' },
-              },
-              { name: 'Private notes', value: true },
-              { name: 'Tagging & assignment', value: true },
-              {
-                name: 'Collision detection',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Monthly persecution challenges',
+                value: { 'Disciple Level': false, 'Centurion Level': true, "Governor's Circle": true },
               },
               {
-                name: 'Real-time activity indicators',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Stations of the Crossfit',
+                value: { 'Disciple Level': false, 'Centurion Level': false, "Governor's Circle": true },
               },
               {
-                name: 'Internal chat',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: '39 lashes of motivation',
+                value: { 'Disciple Level': false, 'Centurion Level': false, "Governor's Circle": true },
               },
             ],
           },
           {
-            title: 'Automation',
+            title: 'Nutrition & Wellness',
             features: [
-              { name: 'Automatic replies', value: true },
               {
-                name: 'Inbox Agent',
-                value: { Starter: false, Growth: true, Pro: true },
+                name: 'Bread and fish nutrition guide',
+                value: { 'Disciple Level': false, 'Centurion Level': true, "Governor's Circle": true },
               },
               {
-                name: 'Automation engine',
-                value: { Starter: false, Growth: true, Pro: true },
-              },
-              {
-                name: 'Snippets and templates',
-                value: { Starter: false, Growth: true, Pro: true },
-              },
-              {
-                name: 'SLA tracking',
-                value: { Starter: false, Growth: false, Pro: true },
+                name: 'Wine to Water hydration therapy',
+                value: { 'Disciple Level': false, 'Centurion Level': false, "Governor's Circle": true },
               },
             ],
           },
           {
-            title: 'Team Management',
+            title: 'Community',
             features: [
+              { name: 'Stone Tablet newsletter', value: true },
+              { name: 'Forum Magnum access', value: true },
               {
-                name: 'Unlimited users',
-                value: { Starter: 'Up to 5', Growth: true, Pro: true },
+                name: 'Golgotha Peak access',
+                value: { 'Disciple Level': false, 'Centurion Level': true, "Governor's Circle": true },
               },
               {
-                name: 'Reporting dashboard',
-                value: { Starter: false, Growth: true, Pro: true },
-              },
-              {
-                name: 'Slack integration',
-                value: { Starter: false, Growth: true, Pro: true },
-              },
-              {
-                name: 'Roles & permissions',
-                value: { Starter: false, Growth: false, Pro: true },
-              },
-              {
-                name: 'SSO support',
-                value: { Starter: false, Growth: false, Pro: true },
-              },
-            ],
-          },
-          {
-            title: 'Support',
-            features: [
-              { name: 'Email support', value: true },
-              {
-                name: 'Priority response',
-                value: { Starter: false, Growth: true, Pro: true },
-              },
-              {
-                name: 'Dedicated manager',
-                value: { Starter: false, Growth: false, Pro: true },
+                name: 'Bonus "Dolo Rossa" gymnastics module',
+                value: { 'Disciple Level': false, 'Centurion Level': false, "Governor's Circle": true },
               },
             ],
           },

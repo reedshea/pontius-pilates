@@ -515,65 +515,55 @@ export default function Page() {
       {/* Pricing */}
       <PricingMultiTier
         id="pricing"
-        headline="Pricing to fit your business needs."
+        headline="All subscriptions payable in advance by the Ides of each month. We accept tetradrachm!"
         plans={
           <>
             <Plan
-              name="Starter"
-              price="$12"
-              period="/mo"
-              subheadline={<p>Small teams getting started with shared inboxes</p>}
+              name="Disciple Level"
+              price="IV"
+              period=" denarii"
+              subheadline={<p>Begin your journey on the path to righteousness</p>}
               features={[
-                'Shared inbox for up to 2 mailboxes',
-                'Tagging & assignment',
-                'Private notes',
-                'Automatic replies',
-                'Email support',
+                'Cross-training basics',
+                'Stone Tablet newsletter',
+                'Forum Magnum access',
               ]}
               cta={
                 <SoftButtonLink href="#" size="lg">
-                  Start free trial
+                  Select Plan
                 </SoftButtonLink>
               }
             />
             <Plan
-              name="Growth"
-              price="$49"
-              period="/mo"
-              subheadline={<p>Growing teams needing collaboration and insights</p>}
+              name="Centurion Level"
+              price="VIII"
+              period=" denarii"
+              subheadline={<p>For the devoted who seek greater challenges</p>}
               badge="Most popular"
               features={[
-                'Everything in Starter',
-                'Inbox Agent',
-                'Unlimited mailboxes',
-                'Collision detection',
-                'Snippets and templates',
-                'Reporting dashboard',
-                'Slack integration',
+                'Bread and fish nutrition guide',
+                'Monthly persecution challenges',
+                'Golgotha Peak access',
               ]}
               cta={
                 <ButtonLink href="#" size="lg">
-                  Start free trial
+                  Select Plan
                 </ButtonLink>
               }
             />
             <Plan
-              name="Pro"
-              price="$299"
-              period="/mo"
-              subheadline={<p>Support-focused organizations and larger teams</p>}
+              name="Governor's Circle"
+              price="XII"
+              period=" denarii"
+              subheadline={<p>The ultimate transformation of biblical proportions</p>}
               features={[
-                'Everything in Growth',
-                'Custom roles & permissions',
-                'Automation engine',
-                'API access',
-                'SLA tracking',
-                'SSO support',
-                'SOC 2 compliance',
+                'Stations of the Crossfit',
+                '39 lashes of motivation',
+                'Wine to Water hydration therapy',
               ]}
               cta={
                 <SoftButtonLink href="#" size="lg">
-                  Start free trial
+                  Select Plan
                 </SoftButtonLink>
               }
             />
