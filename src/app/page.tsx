@@ -41,8 +41,8 @@ export default function Page() {
       {/* Stats */}
       <StatsWithGraph
         id="stats"
-        eyebrow="Gains Over Time"
-        headline="Transforming souls across the Empire since XXXIII A.D."
+        eyebrow="The Gospel of Gains"
+        headline="Suffering builds character since XXXIII A.D."
         subheadline={
           <p>
             From the shores of Galilee to the hills of Rome, Pontius Pilates has guided countless disciples on their
@@ -50,8 +50,9 @@ export default function Page() {
           </p>
         }
       >
-        <Stat stat="MDCC+" text="Souls transformed through our sacred training methods." />
-        <Stat stat="XCIX.IX%" text="Resurrection rate — rise again after every workout." />
+        <Stat stat="XCIX.IX%" text="Resurrection rate — rise again after every workout" />
+        <Stat stat="MDCC+" text="Souls transformed through our sacred training methods" />
+        <Stat stat="XL" text="Days and nights of fasted cardio" />
       </StatsWithGraph>
 
       {/* Features */}
