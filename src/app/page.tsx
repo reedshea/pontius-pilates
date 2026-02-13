@@ -33,55 +33,26 @@ export default function Page() {
         }
         demo={
           <>
-            <Screenshot className="rounded-md lg:hidden" wallpaper="green" placement="bottom-right">
-              <Image
-                src="/img/screenshots/1-left-1670-top-1408.webp"
-                alt="Training sanctum preview"
-                width={1670}
-                height={1408}
-                className="bg-white/75 md:hidden dark:hidden"
-              />
-              <Image
-                src="/img/screenshots/1-color-olive-left-1670-top-1408.webp"
-                alt="Training sanctum preview"
-                width={1670}
-                height={1408}
-                className="bg-black/75 not-dark:hidden md:hidden"
-              />
-              <Image
-                src="/img/screenshots/1-left-2000-top-1408.webp"
-                alt="Training sanctum preview"
-                width={2000}
-                height={1408}
-                className="bg-white/75 max-md:hidden dark:hidden"
-              />
-              <Image
-                src="/img/screenshots/1-color-olive-left-2000-top-1408.webp"
-                alt="Training sanctum preview"
-                width={2000}
-                height={1408}
-                className="bg-black/75 not-dark:hidden max-md:hidden"
-              />
-            </Screenshot>
-            <Screenshot className="rounded-lg max-lg:hidden" wallpaper="green" placement="bottom">
-              <Image
-                src="/img/screenshots/1.webp"
-                alt="Training sanctum preview"
-                className="bg-white/75 dark:hidden"
-                width={3440}
-                height={1990}
-              />
-              <Image
-                className="bg-black/75 not-dark:hidden"
-                src="/img/screenshots/1-color-olive.webp"
-                alt="Training sanctum preview"
-                width={3440}
-                height={1990}
-              />
-            </Screenshot>
           </>
         }
       />
+
+      {/* Stats */}
+      <StatsWithGraph
+        id="stats"
+        eyebrow="Gains Over Time"
+        headline="Transforming souls across the Empire since XXXIII A.D."
+        subheadline={
+          <p>
+            From the shores of Galilee to the hills of Rome, Pontius Pilates has guided countless disciples on their
+            journey to physical and spiritual perfection. Our methods are time-tested and martyr-approved.
+          </p>
+        }
+      >
+        <Stat stat="MDCC+" text="Souls transformed through our sacred training methods." />
+        <Stat stat="XCIX.IX%" text="Resurrection rate — rise again after every workout." />
+      </StatsWithGraph>
+
       {/* Features */}
       <FeaturesTwoColumnWithDemos
         id="features"
@@ -244,21 +215,7 @@ export default function Page() {
           </>
         }
       />
-      {/* Stats */}
-      <StatsWithGraph
-        id="stats"
-        eyebrow="Gains Over Time"
-        headline="Transforming souls across the Empire since XXXIII A.D."
-        subheadline={
-          <p>
-            From the shores of Galilee to the hills of Rome, Pontius Pilates has guided countless disciples on their
-            journey to physical and spiritual perfection. Our methods are time-tested and martyr-approved.
-          </p>
-        }
-      >
-        <Stat stat="MDCC+" text="Souls transformed through our sacred training methods." />
-        <Stat stat="XCIX.IX%" text="Resurrection rate — rise again after every workout." />
-      </StatsWithGraph>
+
       {/* Testimonial */}
       <TestimonialThreeColumnGrid
         id="testimonial"
