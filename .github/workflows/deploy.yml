@@ -19,6 +19,7 @@ jobs:
     outputs:
       s3_bucket: ${{ steps.get-outputs.outputs.s3_bucket }}
       cloudfront_id: ${{ steps.get-outputs.outputs.cloudfront_id }}
+      counter_url: ${{ steps.get-outputs.outputs.counter_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -54,8 +55,10 @@ jobs:
           STACK_NAME="pontius-pilates-website"
           S3_BUCKET=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --query "Stacks[0].Outputs[?OutputKey=='WebsiteBucketName'].OutputValue" --output text)
           CLOUDFRONT_ID=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --query "Stacks[0].Outputs[?OutputKey=='CloudFrontDistributionId'].OutputValue" --output text)
+          COUNTER_URL=$(aws cloudformation describe-stacks --stack-name $STACK_NAME --query "Stacks[0].Outputs[?OutputKey=='CounterFunctionUrl'].OutputValue" --output text)
           echo "s3_bucket=$S3_BUCKET" >> $GITHUB_OUTPUT
           echo "cloudfront_id=$CLOUDFRONT_ID" >> $GITHUB_OUTPUT
+          echo "counter_url=$COUNTER_URL" >> $GITHUB_OUTPUT
 
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -85,6 +88,8 @@ jobs:
 
       - name: Build NextJS site
         run: npm run build
+        env:
+          NEXT_PUBLIC_COUNTER_URL: ${{ needs.update_aws.outputs.counter_url }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
