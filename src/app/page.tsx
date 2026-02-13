@@ -13,6 +13,7 @@ import { Stat, StatsWithGraph } from '@/components/sections/stats-with-graph'
 import { Testimonial, TestimonialThreeColumnGrid } from '@/components/sections/testimonials-three-column-grid'
 import { TestimonialLargeQuote } from '@/components/sections/testimonial-with-large-quote'
 import { AnnouncementBadge } from '@/components/elements/announcement-badge'
+import { VisitorCounter } from '@/components/elements/visitor-counter'
 
 export default function Page() {
   return (
@@ -335,6 +336,8 @@ export default function Page() {
           </div>
         }
       />
+
+      <VisitorCounter />
     </>
   )
 }
