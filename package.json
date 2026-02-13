@@ -1,6 +1,6 @@
 {
-  "name": "oatmeal-demo",
-  "version": "0.0.1",
+  "name": "pontius-pilates",
+  "version": "3.16.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
